@@ -1,0 +1,183 @@
+/*
+Implementations Skeletor v3 - 5/10/2014
+
+oustyles.css
+
+Add styles to overwrite customer CSS, USE WITH CAUTION.
+
+Contributors: Your Name Here
+Last Updated: Enter Date Here
+*/
+
+.ou-justedit-toolbar-cntr * {
+    display: inline-block;
+}
+
+/* Main Content region Fix*/
+
+/*
+.col-content *{
+	float:none;
+}
+.col-content p a{
+	display:block;
+}
+*/
+
+/* fixed UL indent */
+
+/*.col-content ul {
+	margin-left:30px;
+}
+
+.inner-indent ul {
+	margin-left: initial;
+}
+*/
+
+/* remove icon for pdf */
+
+a[href$=".pdf"].ou-noafter:after {
+    content: none;
+}
+
+#directedit a:hover,
+#directedit a {
+    text-decoration: none;
+    color: black;
+}
+
+#directedit a:after {
+    content: '';
+    font-family: initial;
+    color: black;
+}
+
+.ou-btn {
+    display: inline-block !important;
+    width: auto !important;
+    float: none !important;
+}
+
+.ou-icon-pencil {
+    display: inline !important;
+    width: auto !important;
+    float: none !important;
+}
+
+/* OU Form Fix */
+
+.ou-form .required {
+    display: inline-block;
+    width: initial;
+    float: none;
+}
+
+table[class^=ou-] {
+    display: table !important;
+}
+
+table[class^=ou-] * {
+    float: none;
+}
+
+table[class^=ou-] caption {
+    display: table-caption;
+}
+
+table[class^=ou-] colgroup {
+    display: table-column-group;
+}
+
+table[class^=ou-] col {
+    display: table-column;
+}
+
+table[class^=ou-] thead {
+    display: table-header-group;
+}
+
+table[class^=ou-] tbody {
+    display: table-row-group;
+}
+
+table[class^=ou-] tr {
+    display: table-row;
+}
+
+table[class^=ou-] th,
+table[class^=ou-] td {
+    display: table-cell;
+}
+
+/* Flex Slider */
+
+.flex-control-paging li {
+    display: inline-block !important;
+    float: none !important;
+    width: auto !important;
+}
+
+.flex-control-nav li a {
+    -webkit-border-radius: 300px;
+    border-radius: 300px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #fff;
+    display: inline-block;
+    overflow: hidden;
+    width: 10px;
+    height: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.flex-direction-nav li a {
+    opacity: .9;
+    filter: 'alpha(opacity=$opacity * 100)';
+    width: 26px;
+    height: 26px;
+    margin: -13px 0 0;
+    display: block;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    color: #666;
+}
+
+.flex-direction-nav a:before {
+    font-size: 22px !important;
+}
+
+/* Pretty Photo */
+
+.thumbnails>li {
+    width: auto;
+}
+
+.pp_top .pp_middle,
+.pp_bottom .pp_middle {
+    display: inline-block !important;
+    width: auto !important;
+    float: none !important;
+}
+
+.pp_social {
+    display: inline !important;
+    width: inherit !important;
+    float: none !important;
+}
+
+.pp_social .facebook {
+    float: left;
+    margin-left: 5px;
+    width: 60px !important;
+    overflow: hidden;
+}
+
+.twitter {
+    height: 23px;
+    width: initial;
+}
